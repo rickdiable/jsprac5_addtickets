@@ -3,7 +3,7 @@
 let list = [{
         id: 0,
         ticketTitle: "綠島自由行套裝行程",
-        ticketUrl: "https://raw.githubusercontent.com/rickdiable/jsprac5_addtickets/main/img/ticket-img/photo-1477894387642-00a731c511b3.png",
+        ticketUrl: "https://github.com/rickdiable/jsprac5_addtickets/blob/main/img/ticket-img/photo-1477894387642-00a731c511b3.png?raw=true",
         ticketRegion: "台北",
         ticketPrice: "$1,280",
         ticketNum: 8,
@@ -13,7 +13,7 @@ let list = [{
     {
         id: 1,
         ticketTitle: "清境高空觀景步道二日遊",
-        ticketUrl: "https://raw.githubusercontent.com/rickdiable/jsprac5_addtickets/main/img/ticket-img/photo-1526772662000-3f88f10405ff.png",
+        ticketUrl: "https://github.com/rickdiable/jsprac5_addtickets/blob/main/img/ticket-img/photo-1526772662000-3f88f10405ff.png?raw=true",
         ticketRegion: "台北",
         ticketPrice: "$2,580",
         ticketNum: 12,
@@ -23,7 +23,7 @@ let list = [{
     {
         id: 2,
         ticketTitle: "熊森公園親子二日遊套票",
-        ticketUrl: "https://raw.githubusercontent.com/rickdiable/jsprac5_addtickets/main/img/ticket-img/photo-1598954467835-3b0b6fe3be70.png",
+        ticketUrl: "https://github.com/rickdiable/jsprac5_addtickets/blob/main/img/ticket-img/photo-1598954467835-3b0b6fe3be70.png?raw=true",
         ticketRegion: "高雄",
         ticketPrice: "$2,480",
         ticketNum: 3,
