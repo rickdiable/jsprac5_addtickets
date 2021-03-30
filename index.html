@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Travel!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header class="table-top wrap d-flex jc-between">
+        <div class="img-group d-flex d-flex-column">
+            <img src="/img/iRssPpJ.png" alt="">
+            <img src="/img/vJt0znH.png" alt="">
+        </div>
+        <form class="form-list" action="">
+            <h1 class="h1"><span><i class="fas fa-plus-circle"></i></span>新增旅遊套票</h1>
+            <div class="form-group">
+                <label for="ticketTitle">套票名稱</label><input type="text" name="套票名稱" id="ticketTitle"
+                    placeholder="請填寫套票名稱">
+            </div>
+            <div class="form-group">
+                <label for="ticketUrl">圖片網址</label><input type="text" name="圖片網址" id="ticketUrl" placeholder="請填寫圖片網址">
+            </div>
+            <div class="form-group">
+                <label for="ticketRegion">景點地區</label>
+                <select name="景點地區" id="ticketRegion">
+                    <option value="" disabled selected hidden>請選擇景點地區</option>
+                    <option value="台北">台北</option>
+                    <option value="台中">台中</option>
+                    <option value="高雄">高雄</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="ticketPrice">套票金額</label><input type="number" id="ticketPrice" name="套票金額"
+                    placeholder="請填寫套票金額" min="0">
+            </div>
+            <div class="form-group">
+                <label for="ticketNum">套票組數</label><input type="number" name="套票組數" id="ticketNum" placeholder="請填寫套票組數"
+                    min="0">
+            </div>
+            <div class="form-group">
+                <label for="ticketScore">套票星級</label><input type="number" name="套票星級" id="ticketScore"
+                    placeholder="請填寫套票星級" min="1" max="10">
+            </div>
+            <div class="form-group d-flex ai-start">
+                <label for="ticketDescription">套票描述</label><textarea name="套票描述" id="ticketDescription"
+                    placeholder="請填寫套票描述(限100字)"></textarea>
+            </div>
+            <input type="button" class="form-btn" value="新增套票">
+        </form>
+    </header>
+
+    <section class="table-bottom">
+        <div class="search-bar wrap d-flex ai-center">
+            <select name="" id="regionSearch">
+                <option value="地區搜尋" disabled selected hidden>地區搜尋</option>
+                <option value="所有地區">所有地區</option>
+                <option value="台北">台北</option>
+                <option value="台中">台中</option>
+                <option value="高雄">高雄</option>
+            </select>
+            <p id="searchResult">本次搜尋共 3 筆資料</p>
+        </div>
+        <div class="wrap-bottom">
+            <ul class="ticket-cards d-flex">
+                <li class="ticket-card">
+                    <div class="ticket-img">
+                        <a href="#">
+                            <img src="/img/ticket-img/photo-1477894387642-00a731c511b3.png" alt="">
+                        </a>
+                        <div class="ticket-region">台北</div>
+                        <div class="ticket-score">8.6</div>
+                    </div>
+                    <div class="ticket-content d-flex-column">
+                        <div>
+                            <h3><a href="#" class="ticket-title">綠島自由行套裝行程</a></h3>
+                            <p class="ticket-intro">
+                                山林悠遊套票，結合南投清境高空步道、雙龍瀑布七彩吊橋、瑞龍瀑布園區之熱門景點，帶您飽覽南投瑰麗的自然環境，體驗變化無窮的地形景觀，喜歡挑戰高空的您一定不可錯過。
+                                （含雙龍瀑布入場券 x2）</p>
+                        </div>
+                        <div class="ticket-status d-flex jc-between ai-center">
+                            <p class="ticket-num"><span><i class="fas fa-exclamation-circle"></i></span> 剩下最後<span
+                                    id="ticketCard-num"> 8 </span> 組</p>
+                            <p class="ticket-currency d-flex ai-center">TWD <span class="ticket-price" id=ticket-price>
+                                    $1,280</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="ticket-card">
+                    <div class="ticket-img">
+                        <a href="#">
+                            <img src="/img/ticket-img/photo-1477894387642-00a731c511b3.png" alt="">
+                        </a>
+                        <div class="ticket-region">台北</div>
+                        <div class="ticket-score">8.6</div>
+                    </div>
+                    <div class="ticket-content d-flex-column">
+                        <div>
+                            <h3><a href="#" class="ticket-title">綠島自由行套裝行程</a></h3>
+                            <p class="ticket-intro">
+                                清境農場青青草原數十公頃碧草，餵食著數以百計的綿羊和牛群，中央山脈最高的北三段群峰形成一堵如帶的高牆，攔住清晨的薄霧山嵐，成就了從花蓮翻山而來的雲瀑在濁水溪谷積成雲海，這些景觀豐沛了清境觀景步道的風
+                            </p>
+                        </div>
+                        <div class="ticket-status d-flex jc-between ai-center">
+                            <p class="ticket-num"><span><i class="fas fa-exclamation-circle"></i></span> 剩下最後<span
+                                    id="ticketCard-num"> 8 </span> 組</p>
+                            <p class="ticket-currency d-flex ai-center">TWD <span class="ticket-price" id=ticket-price>
+                                    $1,280</span></p>
+                        </div>
+                    </div>
+                </li>
+                <li class="ticket-card">
+                    <div class="ticket-img">
+                        <a href="#">
+                            <img src="/img/ticket-img/photo-1477894387642-00a731c511b3.png" alt="">
+                        </a>
+                        <div class="ticket-region">台北</div>
+                        <div class="ticket-score">8.6</div>
+                    </div>
+                    <div class="ticket-content d-flex-column">
+                        <div>
+                            <h3><a href="#" class="ticket-title">綠島自由行套裝行程</a></h3>
+                            <p class="ticket-intro">來自日本愛樂園裡一同成長，提供兒童一個最富教育性及娛樂性的休憩遊樂天地！</p>
+                        </div>
+                        <div class="ticket-status d-flex jc-between ai-center">
+                            <p class="ticket-num"><span><i class="fas fa-exclamation-circle"></i></span> 剩下最後<span
+                                    id="ticketCard-num"> 8 </span> 組</p>
+                            <p class="ticket-currency d-flex ai-center">TWD <span class="ticket-price" id=ticket-price>
+                                    $1,280</span></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="all.js"></script>
+</body>
+
+</html>

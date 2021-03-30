@@ -1,0 +1,391 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* css reset end */
+
+
+
+.wrap {
+    width: 920px;
+    margin: 120px auto 100px;
+}
+
+.wrap-bottom {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jc-between {
+    justify-content: space-between;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+.table-top {
+    padding: 60px 95px 70px 95px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+}
+
+.form-list {
+    width: 350px;
+}
+
+.h1 {
+    font-size: 24px;
+    line-height: 33px;
+    border-bottom: 3px solid #00807E;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+
+.h1 span {
+    margin-right: 6px;
+}
+
+.form-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-list label {
+    color: #00807E;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+textarea,
+select {
+    width: 72%;
+    text-indent: 0.5rem;
+    background-color: #F7F7F7;
+    color: #818A91;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid #00807E;
+    min-height: 38px;
+}
+
+.form-list textarea {
+    min-height: 111px;
+}
+
+.form-list textarea::placeholder {
+    font-size: 1rem;
+}
+
+.form-btn {
+    align-self: flex-end;
+    border: none;
+    background-color: #00807E;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.form-btn:hover {
+    background-color: #64C3BF;
+}
+
+
+.table-bottom {
+    background-color: #F7F7F7;
+}
+
+.search-bar {
+    padding: 56px 0 60px;
+    width: 920px;
+    margin: 0 auto;
+}
+
+.table-bottom select {
+    border: 1px #CED4DA solid;
+    background-color: #FFF;
+    width: 255px;
+    line-height: 22px;
+}
+
+.search-bar p {
+    color: #818A91;
+    margin-left: 30px;
+}
+
+.ticket-cards {
+    flex-wrap: wrap;
+}
+
+.ticket-card {
+    width: 31%;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 5px;
+    margin-bottom: 38px;
+    margin-right: 2%;
+}
+
+.ticket-img {
+    position: relative;
+}
+
+.ticket-img a {
+    display: block;
+    overflow: hidden;
+}
+
+.ticket-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.ticket-img img:hover {
+    transition: 0.5s;
+    transform: scale(1.15);
+}
+
+
+.ticket-region,
+.ticket-score {
+    position: absolute;
+    border-radius: 0 5px 5px 0px;
+    color: #FFF;
+    text-align: center;
+    left: 0;
+}
+
+.ticket-region {
+    top: -13px;
+    background-color: #64C3BF;
+    padding: 8px 20px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.ticket-score {
+    bottom: -16px;
+    background-color: #00807E;
+    padding: 5px 8px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.ticket-content {
+    padding: 20px;
+    height: 296px;
+}
+
+.ticket-title {
+    display: block;
+    text-decoration: none;
+    color: #00807E;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #00807E;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.ticket-title:hover {
+    color: #64C3BF;
+}
+
+.ticket-intro {
+    line-height: 24px;
+    color: #818A91;
+    margin-bottom: 22px;
+}
+
+.ticket-status {
+    font-family: 'Roboto', sans-serif;
+}
+
+.ticket-currency {
+    font-size: 16px;
+    line-height: 22px;
+    color: #00807E;
+    margin-right: 4px;
+}
+
+.ticket-num {
+    font-size: 16px;
+    line-height: 22px;
+    color: #00807E;
+    font-weight: 500;
+}
+
+.ticket-price {
+    font-size: 32px;
+    line-height: 43px;
+}
+
+.ai-start {
+    align-items: flex-start;
+}
+
+.ai-start label {
+    padding-top: 6px;
+}
